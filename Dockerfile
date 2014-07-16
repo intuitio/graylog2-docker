@@ -41,6 +41,6 @@ RUN chown graylog2:root /opt/graylog2-server-0.20.3 /opt/graylog2-web-interface-
 #   - 9000: Web interface
 #   - 12201: GELF UDP
 #   - 12900: REST API
-EXPOSE 9000 12201/udp 12900
+EXPOSE 9000 12201/udp 12202/tcp 12900
 
 ADD service /etc/service
